@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    android:layout_marginBottom="15dp"
+    app:cardCornerRadius="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#57555A">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/quiz_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:text="Quiz Title"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/expand_collapse_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_down"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl1"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/quiz_share_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/share_button_back"
+                    android:text="Share"
+                    android:textColor="@android:color/white"/>
+
+                <Button
+                    android:id="@+id/quiz_delete_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/delete_button_back"
+                    android:text="DELETE"
+                    android:textColor="@android:color/white"/>
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4A3E4A">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/quiz_const_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/prev_question_const"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prev."
+                android:background="@android:color/transparent"
+                android:textColor="#3CC642"
+                android:textSize="18sp"
+                android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/next_question_const"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:background="@android:color/transparent"
+                android:textColor="#3CC642"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageButton
+                    android:id="@+id/delete_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_delete"
+                    android:background="@android:color/transparent"/>
+                <ImageButton
+                    android:id="@+id/save_question"
+                    android:layout_toEndOf="@id/delete_question"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_save"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/quiz_const_toolbar"/>
+
+
+</RelativeLayout>

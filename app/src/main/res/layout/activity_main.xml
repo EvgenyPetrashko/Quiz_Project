@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#2C2B2C">
+
+    <TextView
+        android:id="@+id/title_block"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Quiz"
+        android:textColor="@android:color/white"
+        android:textSize="65sp"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:id="@+id/button_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/quiz_constructor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_screen_item_shape"
+            android:textColor="@android:color/white"
+            android:text="Quiz Constructor"/>
+
+        <Button
+            android:id="@+id/quiz_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_screen_item_shape"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="15dp"
+            android:text="Created quizzes"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ball1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/red_ball_back"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ball2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/red_ball_back"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ball3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/red_ball_back"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ball4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/red_ball_back"
+        android:visibility="invisible" />
+
+  <!--  <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>-->
+
+
+</RelativeLayout>
